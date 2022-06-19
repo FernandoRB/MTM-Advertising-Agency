@@ -1,0 +1,43 @@
+
+  
+  <!--DESCRIPCION IMAGEN BOSQUE-->
+
+  <div class="card" id="description-menu-3">
+    <img src="assets/img/descipcion/bosques-de-casanova-fachada-descripcion.jpg" class="img-fluid">
+  
+    <li class="text-address-2 text-center"> 
+    <br>
+    <p>What you were waiting for in the High Queen. <br> The Casanova Woods is a spectacular place
+      <br>to live in nature. With Tree Paths<br>Natives and Interior Slope.</p>
+    <p>2 buildings of 4 floors with Studios, Lofts, Apartments.</p>
+   <p> Great Terminations. State-of-the-art faucet. Imported Porcelain Floors.</p>
+   <p >
+    Open concept kitchens. Terraces in all Departments. Closed Circuit TV <br> and Concierge. Panoramic views. <br> Steps from shopping centers.</p>
+
+
+    <form #formContacto="ngForm" (ngSubmit)="OnSubmit(formContacto)" id="form">
+    
+      <div class="Contact">
+        <p>
+          Contact
+        </p>
+      </div>    
+
+
+
+
+      <label for="nombre" class="form-title">Name</label> <br>
+      <input type="text" class="form-content" name="nombre" #nombre="ngModel" [(ngModel)]="usuario.nombre" required/> 
+      <span *ngIf="nombre.touched && !nombre.valid" ></span> <br>
+      <label for="email" class="form-title">Email</label> <br>
+      <input type="text" class="form-content" name="email" #email="ngModel" [(ngModel)]="usuario.email" required  />
+      <span *ngIf="email.touched && !email.valid" ></span><br>
+      <label for="mensaje" class="form-title">Message</label> <br> 
+      <textarea class="form-message" name="mensaje" #mensaje="ngModel" [(ngModel)]="usuario.mensaje" required pattern="[a-zA-Z]+"></textarea> 
+      <span *ngIf="mensaje.touched && !mensaje.valid"></span><br>
+      <input type="submit" value="Send" class="form-send" [disabled]="!formContacto.form.valid" id="send"/>
+    </form>
+
+  
+  
+  </div>

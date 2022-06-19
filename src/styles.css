@@ -1,0 +1,20 @@
+html{
+
+    font-size: 62.5%;
+    font-family: 'Oswald', sans-serif;
+}
+:root{
+    --black-strong:#272727;
+    --black-low:#272727;
+    --white:#ffffff;
+    --cream:#E5D8C7;
+    --orange:#c5a47e;
+    --orange2:#C99D77;
+    --gray:#CACFD2;
+    --gray2:#7F8C8D;
+    --red:#df282b;
+    --footer:#F0F0F0;
+
+
+
+}

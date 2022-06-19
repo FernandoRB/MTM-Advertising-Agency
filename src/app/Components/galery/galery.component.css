@@ -1,0 +1,93 @@
+/*planos*/
+.title-galery{
+  margin: auto;
+  text-align:center;
+  font-size: 3.0rem;
+  background-color: var(--orange);
+  width: 110px;
+  height: 40px;
+  border-radius: 20px;
+  align-items: center;
+
+}
+
+
+.container{
+    position: relative;
+    margin-top:40px;
+    margin-bottom: 40px;
+    max-width: 90%;
+    right: 1%;
+background-color: transparent;
+    max-height: 600px;
+  }
+  
+
+
+  ul, li {
+      list-style: none;
+  }
+  
+  ul.slider{
+    width: 100%;
+    background-color: transparent;
+    position: relative; 
+    height: 400px;
+  }
+  
+  ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      
+      
+  }
+  
+  ul.slider li img{
+    width:100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  
+  ul.slider li:first-child {
+      opacity: 1; /*Mostramos el primer <li>*/
+  }
+  
+  ul.slider li:target {
+      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+  }
+  
+  .menu{ 
+    position: relative;
+    margin:0px 20px 0px 0px;
+    text-align: center;
+    
+    
+  }
+  
+  .menu li{
+
+    text-align: center;
+    display: inline-block;
+  }
+  
+  .menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+  }
+  .menu li a:active{
+
+    background-color:var(--orange);
+}

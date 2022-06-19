@@ -1,0 +1,62 @@
+/*submenus*/
+
+
+#description-menu{
+
+    position: relative;
+    align-items: center;
+    width: 100%;
+    bottom: 30px;
+    min-width: 328px;    
+    max-height:130px;
+    list-style:none;   
+    background-color: var(--black-strong);
+}
+
+/*descripcion */
+.text-address, 
+.text-surface, 
+.text-bedroomss
+{
+    max-width: 300px;
+    font-size:1.5rem;
+    color: var(--white);
+
+}
+
+
+
+/*submenus 2*/
+#description-menu-2{
+
+    position: relative;
+    background-color:transparent;
+    align-items: center;
+    width: 100%;
+    bottom: 32px;
+    min-width: 328px;    
+    max-height:300px;
+    list-style:none;   
+    
+}
+/*descripcion */
+.text-address-2{
+    width: 100%;
+    font-size:1.5rem;
+   background-color: var(--orange);
+    color: var(--white);
+}
+.text-surface-2{
+    width: 100%;
+    font-size:1.5rem;
+    background-color: var(--white);
+    color: var(--black-strong);
+}
+.text-bedroomss-2{ 
+    width: 100%;
+    font-size:1.5rem;
+ background-color: var(--red);
+    color: var(--white);
+
+}
+
